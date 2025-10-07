@@ -6,7 +6,7 @@
 
 ---
 > [!WARNING]
-> This is my personal fork for personal use, I may not maintain the project or update it. DO NOT POST ISSUES ON THE OFFICIAL REPOSITORY!!!
+> This is my personal fork for personal use, i may not make it completely easy to understand step by step, i may not maintain the project or update it. ❗❗❗ DO NOT POST ISSUES ON THE OFFICIAL REPOSITORY❗❗❗
 
 ## 🚀 Features
 
@@ -50,7 +50,8 @@ The Minecraft Bedrock Dedicated Server is not originally designed for ARM64 arch
 Bedrux is an easy-to-use solution for running Minecraft Bedrock Dedicated Servers directly on your Android device, using Termux as the backbone. This saves you much work and time by installing everything that is needed for your Server hosting. Experience the fun of Minecraft without the need for a traditional PC or cloud hosting. You have full control of everything.
 
 ---
-## 🌎 How i can play with my friends(playgg method)?
+
+## 🌎 How i can play with my friends(cgnat method)?
 1. Create a account in playit.gg
 2. Configure your internal ip for server, something like "192.168.x.x:19132"
 3. Enter in the debian environment using 'pd sh debian'
@@ -59,12 +60,20 @@ Bedrux is an easy-to-use solution for running Minecraft Bedrock Dedicated Server
 apt update && apt install wget curl -y && wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-aarch64 && chmod +x playit-linux-aarch64 && ./playit-linux-aarch64
 ```
 5. Open the url that playit passed and test
-6. Done, working...
+6. Done, should worki
 > [!WARNING]
-> Start playitgg after starting the Minecraft server and in a new instance of termux
-> Make to sure to put correct interl server to work
+> Start playitgg after fully starting the bedrock server to avoid server finder failures and instability
+> Make to sure to put correct internal server to work
 > This method is most recommended for users with cgnat
 
+---
+
+## 🌎 How i can play with my friends(direct method)?
+1. Create a port forwarding in your local WiFi router
+2. Make your ip static to avoid ip changes
+3. Share your public ip to your friends and test it out with the port 19132
+
+---
 
 ## 📚 Additional Resources
 
