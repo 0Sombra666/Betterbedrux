@@ -5,6 +5,8 @@
 </div>
 
 ---
+> [!WARNING]
+> This is my personal fork for personal use, I may not maintain the project or update it. DO NOT POST ISSUES ON THE OFFICIAL REPOSITORY!!!
 
 ## 🚀 Features
 
@@ -23,7 +25,7 @@
 > To set up your Minecraft Bedrock Server, fist download [Termux](https://f-droid.org/de/packages/com.termux/). Once installed, launch Termux and allow it to finish initial setup. Then run the following command to initialize the Bedrux environment:
 > 
 > ```bash
-> bash <(curl -s https://raw.githubusercontent.com/euphoriys/bedrux/main/src/setup.sh)
+> bash <(curl -s https://raw.githubusercontent.com/0Sombra666/bedrux/main/src/setup.sh)
 > ```
 
 ### Starting your server
@@ -48,6 +50,21 @@ The Minecraft Bedrock Dedicated Server is not originally designed for ARM64 arch
 Bedrux is an easy-to-use solution for running Minecraft Bedrock Dedicated Servers directly on your Android device, using Termux as the backbone. This saves you much work and time by installing everything that is needed for your Server hosting. Experience the fun of Minecraft without the need for a traditional PC or cloud hosting. You have full control of everything.
 
 ---
+## 🌎 How i can play with my friends(playgg method)?
+1. Create a account in playit.gg
+2. Configure your internal ip for server, something like "192.168.x.x:19132"
+3. Enter in the debian environment using 'pd sh debian'
+4. Install necessary packages
+```txt
+apt update && apt install wget curl -y && wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-aarch64 && chmod +x playit-linux-aarch64 && ./playit-linux-aarch64
+```
+5. Open the url that playit passed and test
+6. Done, working...
+> [!WARNING]
+> Start playitgg after starting the Minecraft server and in a new instance of termux
+> Make to sure to put correct interl server to work
+> This method is most recommended for users with cgnat
+
 
 ## 📚 Additional Resources
 
