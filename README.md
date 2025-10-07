@@ -30,7 +30,7 @@
 
 ### Starting your server
 After setup is complete:
-1. Enter the Debian environment with `pd sh ubuntu`
+1. Enter the Debian environment with `sdeb`
 2. Run `svm` to start the Bedrux Server Manager
 
 ---
@@ -54,7 +54,7 @@ Bedrux is an easy-to-use solution for running Minecraft Bedrock Dedicated Server
 ## 🌎 How i can play with my friends(cgnat method)?
 1. Create a account in playit.gg
 2. Configure your internal ip for server, something like "192.168.x.x:19132"
-3. Enter in the debian environment using 'pd sh debian'
+3. Enter in the debian environment using 'sdeb'
 4. Install necessary packages
 ```txt
 apt update && apt install wget curl -y && wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-aarch64 && chmod +x playit-linux-aarch64 && ./playit-linux-aarch64
