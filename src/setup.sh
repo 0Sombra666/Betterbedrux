@@ -43,9 +43,9 @@ main() {
     install_debian
     implement_function run_silent --define-only
     implement_function setup_debian
-
+    echo 'pd sh debian' > /data/data/com.termux/files/usr/bin/sdeb && chmod +x /data/data/com.termux/files/usr/bin/sdeb
     echo "Environment setup completed!"
-    echo "To enter Debian, run: pd sh debian"
+    echo "To enter Debian, run: sdeb"
     echo "Then use the Bedrux Server Manager: svm"
 }
 
