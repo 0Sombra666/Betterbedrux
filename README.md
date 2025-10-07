@@ -73,5 +73,3 @@ apt update && apt install wget curl -y && wget https://github.com/playit-cloud/p
 - [Minecraft Bedrock Dedicated Server](https://www.minecraft.net/de-de/download/server/bedrock)
 
 ---
-
-## ❓ For any questions or issues, please open an issue on this repository. I'm here to help!
