@@ -6,7 +6,7 @@
 
 ---
 > [!WARNING]
-> This is my personal fork for personal use, i may not make it completely easy to understand step by step, i may not maintain the project or update it. ❗❗❗ DO NOT POST ISSUES ON THE OFFICIAL REPOSITORY❗❗❗
+> This is my personal fork for personal use, i may not make it completely easy to understand step by step, i may not maintain the project or update it. ❗❗❗ DO NOT POST ISSUES ON THE OFFICIAL REPOSITORY❗❗❗ Old is gold, I'm not going to sync this fork with the official repository because I found the web interface update to be poor and impractical; I prefer to keep the older, stable version.
 
 ## 🚀 Features
 
@@ -27,10 +27,14 @@
 > ```bash
 > bash <(curl -s https://raw.githubusercontent.com/0Sombra666/Betterbedrux/main/src/setup.sh)
 > ```
+> AMD64
+> ```bash
+> sudo apt-get install -y fzf curl nano libcurl4t64 && curl -s -O https://raw.githubusercontent.com/0Sombra666/Betterbedrux/main/src/svm && chmod +x svm && sudo mv svm /usr/local/bin/svm
+> ```
 
 ### Starting your server
 After setup is complete:
-1. Enter the Debian environment with `sdeb`
+1. Enter the Debian environment with `sdeb`(just run 'svm' if you are using amd version)
 2. Run `svm` to start the Bedrux Server Manager
 
 ---
@@ -56,9 +60,15 @@ Bedrux is an easy-to-use solution for running Minecraft Bedrock Dedicated Server
 2. Configure your internal ip for server, something like "192.168.x.x:19132"
 3. Enter in the debian environment using 'sdeb'
 4. Install necessary packages
+   aarch64
 ```txt
 apt update && apt install wget curl -y && wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-aarch64 && chmod +x playit-linux-aarch64 && ./playit-linux-aarch64
 ```
+amd64
+```txt
+wget https://github.com/playit-cloud/playit-agent/releases/latest/download/playit-linux-amd64 && chmod +x playit-linux-amd64 && ./playit-linux-amd64
+```
+
 5. Open the url that playit passed and test
 6. Done, should worki
 > [!WARNING]
